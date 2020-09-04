@@ -24,23 +24,27 @@ const data = [{
     content: "Five"
 }];
 
-const statuses = [{
+const statuses = [
+    {
     status: "pool",
-    icon: "✅",
+    icon: "🏄‍♂️",
     color: "#3981DE"
-}, {
+}, 
+{
     status: "odd",
     icon: "⭕️",
-    color: "#EB5A46"
+    color: "#DA70D6"
 }, {
     status: "even",
     icon: "🔆️",
     color: "#00C2E0"
-}, {
-    status: "prime",
-    icon: "📝",
-    color: "#C377E0"
-}];
+}
+// , {
+//     status: "prime",
+//     icon: "📝",
+//     color: "#C377E0"
+// }
+];
 
 
 export { data, statuses };
