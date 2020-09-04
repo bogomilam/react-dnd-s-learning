@@ -1,7 +1,7 @@
 import React from "react";
 import { useDrop } from "react-dnd";
 import ITEM_TYPE from "../data/types";
-import { statuses } from "../data";
+import { statuses } from "../data/numbClasses";
 
 const DropWrapper = ({ onDrop, children, status }) => {
     const [{ isOver }, drop] = useDrop({
@@ -21,7 +21,10 @@ const DropWrapper = ({ onDrop, children, status }) => {
 
     return (
         <div ref={drop} className={"drop-wrapper"}>
+        {/* <p className={"color-bar"} style={{ backgroundColor: status.color }}> */}
+        
             {React.cloneElement(children, { isOver })}
+            {/* </p> */}
         </div>
     )
 };

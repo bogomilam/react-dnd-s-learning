@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Item from "../components/Item";
 import DropWrapper from "../components/DropWrapper";
 import Col from "../components/Col";
-import { data, statuses } from "../data";
+import { data, statuses } from "../data/numbClasses";
 
 const Homepage = () => {
     const [items, setItems] = useState(data);
@@ -20,10 +20,12 @@ const Homepage = () => {
 
     const moveItem = (dragIndex, hoverIndex) => {
         const item = items[dragIndex];
+
         setItems(prevState => {
             const newItems = prevState.filter((i, idx) => idx !== dragIndex);
             newItems.splice(hoverIndex, 0, item);
             return  [ ...newItems ];
+        
         });
     };
 
@@ -32,7 +34,10 @@ const Homepage = () => {
             {statuses.map(s => {
                 return (
                     <div key={status} className={"col-wrapper"}>
-                        <h2 className={"col-header"}>{s.status.toUpperCase()}</h2>
+                        <h2 className={"col-header"}>{s.status.toUpperCase()}
+                        <div className={"color-bar2"} style={{ backgroundColor: s.color }}></div> 
+                        </h2>
+                        
                         <DropWrapper onDrop={onDrop} status={s.status}>
                             <Col>
                                 {items
