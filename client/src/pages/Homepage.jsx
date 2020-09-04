@@ -3,6 +3,9 @@ import Item from "../components/Item";
 import DropWrapper from "../components/DropWrapper";
 import Col from "../components/Col";
 import { data, statuses } from "../data/numbClasses";
+import Pool from "../components/Pool";
+import PoolWrapper from "../components/PoolWrapper";
+
 
 const Homepage = () => {
     const [items, setItems] = useState(data);
@@ -31,6 +34,13 @@ const Homepage = () => {
 
     return (
         <div className={"row"}>
+            {/* <PoolWrapper onDrop={onDrop} 
+            // status={s.status}
+            >
+                            <Col>
+                            {data.map((i, idx) => <Item key={i.id} item={i} index={idx} moveItem={moveItem} status={i.status} />)}
+                            </Col>
+                        </PoolWrapper> */}
             {statuses.map(s => {
                 return (
                     <div key={status} className={"col-wrapper"}>
@@ -48,7 +58,7 @@ const Homepage = () => {
                         </DropWrapper>
                     </div>
                 );
-            })}
+            })};
         </div>
     );
 };

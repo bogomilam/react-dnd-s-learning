@@ -77,7 +77,17 @@ select {
     justify-content: center;
 }
 
+.pool {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
 .item {
+    display :block;
+    height: 65px;
+    width: 80px;
     font-size: 15px;
     margin-bottom: 10px;
     padding: 10px;
@@ -117,9 +127,24 @@ select {
     height: 100%;
 }
 
+.pool-wrapper {
+    /* flex: 1 25%; */
+    width: 100%;
+    height: 50%;
+}
+
 .col-wrapper {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    margin: 20px;
+    padding: 20px;
+    background-color: var(--background-color);
+    border-radius: 5px;
+}
+
+.pool-wrapper {
+    display: flex;
+    flex-direction: row;
     margin: 20px;
     padding: 20px;
     background-color: var(--background-color);
@@ -137,6 +162,12 @@ select {
     min-height: 300px;
     max-width: 300px;
     width: 300px;
+}
+
+.pool {
+    min-height: 100px;
+    max-width: 800px;
+    width: 700px;
 }
 
 .highlight-region {
