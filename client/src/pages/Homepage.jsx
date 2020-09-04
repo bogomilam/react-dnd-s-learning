@@ -52,7 +52,7 @@ const Homepage = () => {
                             <Col>
                                 {items
                                     .filter(i => i.status === s.status)
-                                    .map((i, idx) => <Item key={i.id} item={i} index={idx} moveItem={moveItem} status={s} />)
+                                    .map((i, idx) => <Item className={""} key={i.id} item={i} index={idx} moveItem={moveItem} status={s} />)
                                 }
                             </Col>
                         </DropWrapper>

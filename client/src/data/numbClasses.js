@@ -64,11 +64,7 @@ const statuses = [
     icon: "🔆️",
     color: "#00C2E0"
 }
-// , {
-//     status: "prime",
-//     icon: "📝",
-//     color: "#C377E0"
-// }
+
 ];
 
 

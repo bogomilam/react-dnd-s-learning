@@ -85,11 +85,12 @@ select {
 }
 
 .item {
-    display :block;
+    display: inline-block;
     height: 65px;
     width: 80px;
     font-size: 15px;
     margin-bottom: 10px;
+    margin-right: 5px;
     padding: 10px;
     border-radius: 5px;
     z-index: 1;
@@ -122,9 +123,14 @@ select {
 }
 
 .drop-wrapper {
+    /* display: inline; */
     flex: 1 25%;
     width: 100%;
     height: 100%;
+    /* white-space: nowrap;  */
+    overflow-x: auto;
+    overflow-y: auto;
+   
 }
 
 .pool-wrapper {
@@ -140,15 +146,8 @@ select {
     padding: 20px;
     background-color: var(--background-color);
     border-radius: 5px;
-}
-
-.pool-wrapper {
-    display: flex;
-    flex-direction: row;
-    margin: 20px;
-    padding: 20px;
-    background-color: var(--background-color);
-    border-radius: 5px;
+    
+    
 }
 
 .col-header {
@@ -160,7 +159,7 @@ select {
 
 .col {
     min-height: 300px;
-    max-width: 300px;
+    max-width: 250px;
     width: 300px;
 }
 
