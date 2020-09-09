@@ -24,7 +24,6 @@ const DropWrapper = ({ onDrop, children, status }) => {
         <p className={"color-bar"} style={{ backgroundColor: status.color }}/>
         
             {React.cloneElement(children, { isOver })}
-            {/* </p> */}
         </div>
     )
 };

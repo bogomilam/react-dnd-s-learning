@@ -77,24 +77,25 @@ select {
     justify-content: center;
 }
 
-.pool {
+/* .pool {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-}
+} */
 
 .item {
     display: inline-block;
     height: 65px;
-    width: 80px;
+    width: 40px;
     font-size: 15px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     margin-right: 5px;
     padding: 10px;
     border-radius: 5px;
     z-index: 1;
     background-color: white;
+  
 }
 
 .item:hover {
@@ -104,6 +105,7 @@ select {
 .item-title {
     font-weight: 600;
     font-size: 16px;
+    text-align: center;
 }
 
 .item-status {
@@ -114,30 +116,31 @@ select {
     width: 40px;
     height: 10px;
     border-radius: 5px;
+    margin-bottom: 10px;
 }
 
 .color-bar2 {
     width: 40px;
     height: 10px;
     border-radius: 5px;
+
 }
 
 .drop-wrapper {
-    position: absolute;
+    /* position: relative; */
     /* display: inline; */
-    flex: 1 25%;
+    /* flex: 1 25%; */
     /* width: 100%;
     height: 100%; */
-    /* white-space: nowrap;  */
+    /* white-space: nowrap; */
     overflow-x: auto;
     overflow-y: auto;
-    min-height: 300px;
+    min-height: 120px;
     max-width: 300px;
-   
 }
 
 .pool-wrapper {
-    /* flex: 1 25%; */
+    flex: 1 25%;
     width: 100%;
     height: 50%;
 }
@@ -149,6 +152,8 @@ select {
     padding: 20px;
     background-color: var(--background-color);
     border-radius: 5px;
+    min-height: 400px;
+    max-width: 320px;
     
     
 }
@@ -158,6 +163,7 @@ select {
     font-weight: 600;
     margin-bottom: 20px;
     margin-top: 0;
+
 }
 
 .col {
@@ -166,11 +172,7 @@ select {
     width: 300px;
 }
 
-.pool {
-    min-height: 100px;
-    max-width: 800px;
-    width: 700px;
-}
+
 
 .highlight-region {
     background-color: rgb(136, 199, 35);
