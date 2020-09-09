@@ -123,13 +123,16 @@ select {
 }
 
 .drop-wrapper {
+    position: absolute;
     /* display: inline; */
     flex: 1 25%;
-    width: 100%;
-    height: 100%;
+    /* width: 100%;
+    height: 100%; */
     /* white-space: nowrap;  */
     overflow-x: auto;
     overflow-y: auto;
+    min-height: 300px;
+    max-width: 300px;
    
 }
 
@@ -159,7 +162,7 @@ select {
 
 .col {
     min-height: 300px;
-    max-width: 250px;
+    max-width: 300px;
     width: 300px;
 }
 
