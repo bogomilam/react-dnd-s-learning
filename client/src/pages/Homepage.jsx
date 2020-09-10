@@ -34,14 +34,8 @@ const Homepage = () => {
 
     return (
         <div className={"row"}>
-            {/* <PoolWrapper onDrop={onDrop} 
-            // status={s.status}
-            >
-                            <Col>
-                            {data.map((i, idx) => <Item key={i.id} item={i} index={idx} moveItem={moveItem} status={i.status} />)}
-                            </Col>
-                        </PoolWrapper> */}
-            {statuses.map(s => {
+            {statuses.filter(s => s.status !== "pool")
+            .map(s => {
                 return (
                     <div key={status} className={"col-wrapper"}>
                         <h2 className={"col-header"}>{s.status.toUpperCase()}
@@ -59,6 +53,25 @@ const Homepage = () => {
                     </div>
                 );
             })};
+        <div className={"row"}>
+        {statuses.filter(s => s.status === "pool")
+        .map(s => {
+            return (
+            <div key={status} className={"col-wrapper"}>
+                <h2 className={"col-header"}>{s.status.toUpperCase()}
+                <div className={"color-bar2"} style={{ backgroundColor: s.color }} ></div> 
+                </h2>
+                    <PoolWrapper onDrop={onDrop} status={s.status}>
+                        <Col>
+                        {items.map((i, idx) => <Item className={""} key={i.id} item={i} index={idx} moveItem={moveItem} status={s} />)
+                        }
+                        </Col>
+                                </PoolWrapper>
+                                </div>
+
+            )
+        })}
+        </div>
         </div>
     );
 };

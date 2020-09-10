@@ -73,7 +73,6 @@ const statuses = [
         icon: "#️⃣",
         color: "#C377E0"
     },
-
     {
     status: "even",
     icon: "🏄‍♂️",
