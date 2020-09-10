@@ -52,18 +52,19 @@ const Homepage = () => {
                         </DropWrapper>
                     </div>
                 );
-            })};
-        <div className={"row"}>
+            })
+            }
         {statuses.filter(s => s.status === "pool")
         .map(s => {
             return (
-            <div key={status} className={"col-wrapper"}>
+            <div key={status} className={"pool-wrapper-div"}>
                 <h2 className={"col-header"}>{s.status.toUpperCase()}
                 <div className={"color-bar2"} style={{ backgroundColor: s.color }} ></div> 
                 </h2>
                     <PoolWrapper onDrop={onDrop} status={s.status}>
                         <Col>
-                        {items.map((i, idx) => <Item className={""} key={i.id} item={i} index={idx} moveItem={moveItem} status={s} />)
+                        {items.filter(i => i.status === s.status)
+                        .map((i, idx) => <Item className={""} key={i.id} item={i} index={idx} moveItem={moveItem} status={s} />)
                         }
                         </Col>
                                 </PoolWrapper>
@@ -71,7 +72,6 @@ const Homepage = () => {
 
             )
         })}
-        </div>
         </div>
     );
 };

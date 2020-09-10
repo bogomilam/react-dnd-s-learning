@@ -68,24 +68,23 @@ const data = [{
 ];
 
 const statuses = [
-    {
-        status: "pool",
-        icon: "#️⃣",
-        color: "#C377E0"
-    },
-    {
-    status: "even",
-    icon: "🏄‍♂️",
-    color: "#3981DE"
-}, 
 {
     status: "odd",
     icon: "⭕️",
+    color: "#3981DE"
+},  {
+    status: "even",
+    icon: "🏄‍♂️",
     color: "#DA70D6"
-}, {
+}, 
+ {
     status: "prime",
     icon: "🔆️",
     color: "#00C2E0"
+},  {
+    status: "pool",
+    icon: "#️⃣",
+    color: "#C377E0"
 }
 
 ];

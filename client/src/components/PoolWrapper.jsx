@@ -22,6 +22,8 @@ const PoolWrapper = ({ onDrop, children, status }) => {
 
     return (
         <div ref={drop} className={"drop-wrapper"}>
+        <p className={"color-bar"} style={{ backgroundColor: status.color }}/>
+
             {React.cloneElement(children, { isOver })}
         </div>
     )
