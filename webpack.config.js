@@ -10,7 +10,7 @@ module.exports = {
         filename: 'bundle.js'
     },
     plugins: [new HtmlWebpackPlugin({
-        title: 'React DnD Dashboard',
+        title: 'SLearning DND',
         template: path.join(__dirname, 'client/templates/index.ejs'),
         filename: 'index.html'
     })],
