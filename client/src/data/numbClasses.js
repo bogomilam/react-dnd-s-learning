@@ -2,85 +2,115 @@ const data = [{
     id: 1,
     icon: "#️⃣",
     status: "pool",
-    title: "1",
+    title: "Prime numbers are numbers that have only 2 factors: 1 and themselves. ",
     content: "1"
 }, {
     id: 2,
     icon: "#️⃣",
     status: "pool",
-    title: "2",
+    title: "Prime numbers are numbers that have only 2 factors: 1 and themselves. ",
     content: "2"
 }, {
     id: 3,
     icon: "#️⃣",
     status: "pool",
-    title: "3",
+    title: "Prime numbers are numbers that have only 2 factors: 1 and themselves. ",
     content: "3"
 }, {
     id: 4,
     icon: "#️⃣",
     status: "pool",
-    title: "4",
+    title: "Prime numbers are numbers that have only 2 factors: 1 and themselves. ",
     content: "4"
 }, {
     id: 5,
     icon: "#️⃣",
     status: "pool",
-    title: "5",
+    title: "Prime numbers are numbers that have only 2 factors: 1 and themselves. ",
     content: "5"
 }, {
     id: 6,
     icon: "#️⃣",
     status: "pool",
-    title: "6",
+    title: "Prime numbers are numbers that have only 2 factors: 1 and themselves. ",
     content: "6"
 }, {
     id: 7,
     icon: "#️⃣",
     status: "pool",
-    title: "7",
+    title: "Prime numbers are numbers that have only 2 factors: 1 and themselves. ",
     content: "7"
 }, {
     id: 8,
     icon: "#️⃣",
     status: "pool",
-    title: "8",
+    title: "Prime numbers are numbers that have only 2 factors: 1 and themselves. ",
     content: "8"
 }, {
     id: 9,
     icon: "#️⃣",
     status: "pool",
-    title: "9",
+    title: "Prime numbers are numbers that have only 2 factors: 1 and themselves. ",
     content: "9"
 }, {
     id: 10,
     icon: "#️⃣",
     status: "pool",
-    title: "10",
+    title: "Prime numbers are numbers that have only 2 factors: 1 and themselves. ",
     content: "10"
 }, {
     id: 11,
     icon: "#️⃣",
     status: "pool",
-    title: "11",
+    title: "Prime numbers are numbers that have only 2 factors: 1 and themselves. ",
     content: "11"
+}, {
+    id: 12,
+    icon: "#️⃣",
+    status: "pool",
+    title: "Prime numbers are numbers that have only 2 factors: 1 and themselves. ",
+    content: "12"
+}, {
+    id: 13,
+    icon: "#️⃣",
+    status: "pool",
+    title: "Prime numbers are numbers that have only 2 factors: 1 and themselves. ",
+    content: "13"
+}, {
+    id: 14,
+    icon: "#️⃣",
+    status: "pool",
+    title: "Prime numbers are numbers that have only 2 factors: 1 and themselves. ",
+    content: "14"
+}, {
+    id: 15,
+    icon: "#️⃣",
+    status: "pool",
+    title: "Prime numbers are numbers that have only 2 factors: 1 and themselves. ",
+    content: "15"
+}, {
+    id: 16,
+    icon: "#️⃣",
+    status: "pool",
+    title: "Prime numbers are numbers that have only 2 factors: 1 and themselves. ",
+    content: "16"
 }
 ];
 
 const statuses = [
 {
     status: "odd",
-    icon: "⭕️",
+    icon: "🧿",
     color: "#3981DE"
 },  {
-    status: "even",
+    status: "prime",
     icon: "🏄‍♂️",
-    color: "#DA70D6"
+    color: "#00C2E0"
 }, 
  {
-    status: "prime",
+    status: "even",
     icon: "🔆️",
-    color: "#00C2E0"
+    color: "#DA70D6"
 },  {
     status: "pool",
     icon: "#️⃣",
