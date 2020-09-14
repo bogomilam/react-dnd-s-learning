@@ -2,13 +2,13 @@ const data = [{
     id: 1,
     icon: "#️⃣",
     status: "pool",
-    title: "Prime numbers are numbers that have only 2 factors: 1 and themselves. ",
+    title: "odd",
     content: "1"
 }, {
     id: 2,
     icon: "#️⃣",
     status: "pool",
-    title: "Prime numbers are numbers that have only 2 factors: 1 and themselves. ",
+    title: "even",
     content: "2"
 }, {
     id: 3,
@@ -105,16 +105,16 @@ const statuses = [
 },  {
     status: "prime",
     icon: "🏄‍♂️",
-    color: "#00C2E0"
+    color: "rgb(199 131 196)"
 }, 
  {
     status: "even",
     icon: "🔆️",
-    color: "#DA70D6"
+    color: "#00C2E0"
 },  {
     status: "pool",
     icon: "#️⃣",
-    color: "#C377E0"
+    color: "rgb(98 20 127)"
 }
 
 ];

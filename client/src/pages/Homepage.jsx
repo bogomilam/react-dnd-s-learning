@@ -11,7 +11,7 @@ const Homepage = () => {
     const [items, setItems] = useState(data);
 
     const onDrop = (item, monitor, status) => {
-        const mapping = statuses.find(si => si.status === status);
+        const mapping = statuses.find(i => i.status === status);
 
         setItems(prevState => {
             const newItems = prevState
