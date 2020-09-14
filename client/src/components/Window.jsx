@@ -16,8 +16,10 @@ const Window = ({ show, onClose, item }) => {
                 <button className="close-btn" onClick={onClose}>X</button>
             </div>
             <div>
-                <h2>Description</h2>
-                <p>{item.title}</p>
+                <h2>Prime Numbers?</h2>
+                <p>{item.prime_description}</p>
+                <h2>Number {item.content} Description</h2>
+                <p>{item.clue}</p>
                 <h2>Status</h2>
                 <p>{item.icon} {`${item.status.charAt(0).toUpperCase()}${item.status.slice(1)}`}</p>
             </div>
