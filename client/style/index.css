@@ -245,6 +245,7 @@ select {
     margin-top: 0;
     min-width: 100%;
     text-align: start;
+    text-align: center;
     font-family: Monospace;
     border-radius: 10px;
     color: blue;
