@@ -232,3 +232,32 @@ select {
 .close-btn:hover {
     background-color: #DCDCDC;
 }
+
+.instructions {
+    background-color: rgb(223, 235, 57);
+    position: relative;
+    white-space: nowrap;
+    -webkit-animation: rightThenLeft 3s linear;
+    padding: 5px;
+    color: white;
+    font-size: 20px;
+    flex: 1 100%;
+    margin-top: 0;
+    min-width: 100%;
+    text-align: start;
+    font-family: Monospace;
+    font-weight: bold;
+    border-radius: 10px;
+    color: blue;
+    
+}
+
+p { 
+    color: #2f5687;
+   }
+
+@-webkit-keyframes rightThenLeft {
+    0%   {left: 100%;}
+    /* 50%  {left: 50%;} */
+    100% {left: 0%;}
+}
