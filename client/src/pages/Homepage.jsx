@@ -3,7 +3,6 @@ import Item from "../components/Item";
 import DropWrapper from "../components/DropWrapper";
 import Col from "../components/Col";
 import { data, statuses } from "../data/numbClasses";
-import Pool from "../components/Pool";
 import PoolWrapper from "../components/PoolWrapper";
 
 
@@ -69,7 +68,6 @@ const Homepage = () => {
                         </Col>
                                 </PoolWrapper>
                                 </div>
-
             )
         })}
         </div>

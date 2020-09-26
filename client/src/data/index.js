@@ -10,13 +10,15 @@ const data = [{
     status: "open",
     title: "Purchase present",
     content: "Get an anniversary gift"
-}, {
-    id: 3,
-    icon: "⭕️",
-    status: "open",
-    title: "Invest in investments",
-    content: "Call the bank to talk about investments"
-}, {
+}
+// ,{
+//     id: 3,
+//     icon: "⭕️",
+//     status: "open",
+//     title: "Invest in investments",
+//     content: "Call the bank to talk about investments"
+// }
+, {
     id: 4,
     icon: "⭕️",
     status: "open",

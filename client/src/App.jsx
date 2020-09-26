@@ -9,7 +9,7 @@ const App = () => {
         <DndProvider backend={Backend}>
             <Header />
             <h1 className={"instructions"}>
-                Drag and Drop each item to it's correct number type, click on the number item for a clue!
+                Drag and Drop each item to it's correct number type, click on the number item for a clue!!!
             </h1>
             <Homepage />
         </DndProvider>
